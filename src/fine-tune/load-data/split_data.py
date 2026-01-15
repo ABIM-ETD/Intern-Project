@@ -13,5 +13,12 @@ class DataSplit:
 
     def split(number_of_splits: int):
 
+    
+
+    def save_data():
+
+
+    
+
 
 

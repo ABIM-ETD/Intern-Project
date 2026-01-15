@@ -9,7 +9,3 @@ class DataClass:
         self.path=huggingface_path
 
     def download_dataset_from_huggingface():
-
-
-
-    

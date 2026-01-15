@@ -90,7 +90,13 @@ class DataLabel:
 
 if __name__=="__main__":
 
-    labeldata=DataLabel(path_to_data=".data_source/gpt-4.csv",output_path=".data_source/labelled_data.csv",model="llama3.3:70b-instruct-q4_K_M",system_prompt=SYSTEM_PROMPT,conversation_eval_prompt=CONVERSATION_EVAL_PROMPT)
+    labeldata = DataLabel(
+    path_to_data="/workspace/intern-proj-abim/Intern-Project/src/label-data/data_source/gpt-4.csv",  # Full path
+    output_path="./labeled_conversations.csv",
+    model="llama3.1:8b",
+    system_prompt=SYSTEM_PROMPT,
+    conversation_eval_prompt=CONVERSATION_EVAL_PROMPT
+    )
     labeldata.load_and_label_conversations_together()
     
 

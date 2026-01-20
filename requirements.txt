@@ -1,1 +1,6 @@
 pandas 
+transformers 
+requests 
+ollama 
+mlflow 
+torch 

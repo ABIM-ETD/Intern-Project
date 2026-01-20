@@ -1,14 +1,11 @@
-from .load_model import MultiTaskBertClass
+
 import mlflow 
 
 
-
-mlflow.set_experiment("Loading Custom Bert")
-
-mlflow.set_tracking_uri("")
+mlflow.set_tracking_uri("http://10.51.92.6:5000")
 
 with mlflow.start_run():
-    model = MultiTaskBertClass("bert-base-uncased")
     
-    mlflow.log_param("text","hi")
+    print("logging")
+    mlflow.log_param("text","hi shawn")
 

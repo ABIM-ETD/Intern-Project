@@ -4,3 +4,6 @@ requests
 ollama 
 mlflow 
 torch 
+tqdm 
+vllm 
+huggingface-hub

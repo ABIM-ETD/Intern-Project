@@ -2,39 +2,43 @@ import pandas as pd
 from transformers import AutoModel
 import torch
 import torch.nn as nn 
+from transformers import AutoTokenizer, BertConfig, BertModel, BertPreTrainedModel
 
 
 
-class MultiTaskBertClass(nn.Module):
+class MultiTaskBertClass(BertPreTrainedModel):
 
-    def __init__(self,pretrained_model_name: str):
+    def __init__(self,config):
         super(MultiTaskBertClass,self).__init__()
 
-        self.bert=AutoModel.from_pretrained(pretrained_model_name)
-        
-        self.dropout=nn.Dropout(0.3)
+        super().__init__(config)      
 
-        self.CalCam1=nn.Linear(self.bert.config.hidden_size,3)
+        self.bert=BertModel(config)  
 
-        self.CalCam2=nn.Linear(self.bert.config.hidden_size,3)
+        self.CalCam1=nn.Linear(config.hidden_size,3)
 
-        self.CalCam3=nn.Linear(self.bert.config.hidden_size,3)
+        self.CalCam2=nn.Linear(config.hidden_size,3)
 
-        self.CalCam4=nn.Linear(self.bert.config.hidden_size,3)
+        self.CalCam3=nn.Linear(config.hidden_size,3)
 
-        self.CalCam5=nn.Linear(self.bert.config.hidden_size,3)
+        self.CalCam4=nn.Linear(config.hidden_size,3)
 
-        self.CalCam6=nn.Linear(self.bert.config.hidden_size,3)
+        self.CalCam5=nn.Linear(config.hidden_size,3)
+
+        self.CalCam6=nn.Linear(config.hidden_size,3)
+
+        classifier_dropout = config.classifier_dropout if config.classifier_dropout is not None else config.hidden_dropout_prob
+
+        self.dropout = nn.Dropout(classifier_dropout)
+
+        self.init_weights()
 
     
-    def forward(self, input_ids, attention_mask, calcam1_labels=None, calcam2_labels=None, calcam3_labels=None, calcam4_labels=None, calcam5_labels=None, calcam6_labels=None):
+    def forward(self, input_ids, attention_mask=None,calcam1_labels=None, calcam2_labels=None, calcam3_labels=None, calcam4_labels=None, calcam5_labels=None, calcam6_labels=None):
 
         outputs = self.bert(input_ids=input_ids, attention_mask=attention_mask)
 
-        pooled_output=outputs.pooler_output
-
-        pooled_output=self.dropout(pooled_output)
-
+        pooled_output=self.dropout(outputs[1])
 
         CalCam1_logits=self.CalCam1(pooled_output)
         CalCam2_logits=self.CalCam2(pooled_output)
@@ -47,24 +51,24 @@ class MultiTaskBertClass(nn.Module):
         loss=None
         if calcam1_labels is not None and calcam2_labels is not None and calcam3_labels is not None and calcam4_labels is not None and calcam5_labels is not None and calcam6_labels is not None:
             loss_fct = nn.CrossEntropyLoss()
-            loss1 = loss_fct(CalCam1_logits, calcam1_labels)
-            loss2 = loss_fct(CalCam2_logits, calcam2_labels)
-            loss3 = loss_fct(CalCam3_logits, calcam3_labels)
-            loss4 = loss_fct(CalCam4_logits, calcam4_labels)
-            loss5 = loss_fct(CalCam5_logits, calcam5_labels)
-            loss6 = loss_fct(CalCam6_logits, calcam6_labels)
+            loss1 = loss_fct(CalCam1_logits.view(-1,3), calcam1_labels.view(-1))
+            loss2 = loss_fct(CalCam2_logits.view(-1,3), calcam2_labels.view(-1))
+            loss3 = loss_fct(CalCam3_logits.view(-1,3), calcam3_labels.view(-1))
+            loss4 = loss_fct(CalCam4_logits.view(-1,3), calcam4_labels.view(-1))
+            loss5 = loss_fct(CalCam5_logits.view(-1,3), calcam5_labels.view(-1))
+            loss6 = loss_fct(CalCam6_logits.view(-1,3), calcam6_labels.view(-1))
             loss = loss1 + loss2 + loss3 + loss4 + loss5 + loss6
 
         
-        return {
-            'loss': loss,
-            'CalCam1_logits': CalCam1_logits,
-            'CalCam2_logits': CalCam2_logits,
-            'CalCam3_logits': CalCam3_logits,
-            'CalCam4_logits': CalCam4_logits,
-            'CalCam5_logits': CalCam5_logits,
-            'CalCam6_logits': CalCam6_logits
-        }
+        return (
+            loss,
+            CalCam1_logits,
+            CalCam2_logits,
+            CalCam3_logits,
+            CalCam4_logits,
+            CalCam5_logits,
+            CalCam6_logits
+        )
 
 
 

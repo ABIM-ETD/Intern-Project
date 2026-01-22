@@ -5,5 +5,4 @@ ollama
 mlflow 
 torch 
 tqdm 
-vllm 
-huggingface-hub
+datasets 

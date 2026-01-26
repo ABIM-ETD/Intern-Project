@@ -1,0 +1,182 @@
+data,conversation,cc_opening,cc_agenda_set,cc_patient_narrative_supported,cc_structure_signposting,cc_summary_checkback,cc_closing_next_steps
+"A 55-year-old female patient with past medical history of osteoporosis and hyperlipidemia was admitted to our department for a 2-month history of high-grade fever, up to 39°C, mainly occurring in the evening, which was responding to acetaminophen. She denied night sweats, anorexia, fatigue, weight loss, chest pain, shortness of breath, other joint pain, abdominal pain, recent travel, or a family history of autoimmune disease, although she reported traumatic dental procedure 6 months prior to admission.
+On presentation, her vital signs revealed a temperature of 36.7°C, heart rate of 74 bpm, and blood pressure of 100/70 mmHg. Her physical examination was unremarkable, except for a systolic heart murmur, heard best over the aortic, pulmonic, and mitral area with radiation into the neck. Laboratory studies revealed thrombocytopenia with 123.000 μL platelets, white blood cell count of 4.3 × 109 L with neutrophils as the predominant type, and mild normocytic anemia (Hct: 34.7%; Hb: 11.7 g/d). The C-reactive protein (CRP) was 1.43 mg/dL (nl: <0.5), the erythrocyte sedimentation rate (ESR) was 32 mm/h, and creatine phosphokinase (CPK) was also elevated as 335 U/L (reference range: <180 U/L).
+From three blood cultures obtained on the 1st, 2nd, and 3rd day of her hospitalization, when she was febrile, Streptococcus thoraltensis was identified, while infection caused by Brucella, Mycobacterium tuberculosis, Coxiella, and Leishmania was excluded. The suspicion of an infective endocarditis (IE) was raised, and a transthoracic and transesophageal echo was performed. However, there was no evidence of IE, and only mild aortic stenosis was revealed. A panoramic X-ray showed no lesions. Additionally, as part of the diagnostic procedure, a chest","Doctor: Hello, how are you feeling today?
+Patient: I'm feeling okay, just a bit tired.
+Doctor: Okay, I see that you were admitted to our department for a 2-month history of high-grade fever. Can you tell me more about your symptoms?
+Patient: Yes, my fever was up to 39°C and mainly occurred in the evening. I took acetaminophen and it helped.
+Doctor: Did you have any night sweats, anorexia, fatigue, weight loss, chest pain, shortness of breath, other joint pain, abdominal pain, recent travel, or a family history of autoimmune disease?
+Patient: No, I didn't have any of those symptoms. But I did have a traumatic dental procedure 6 months prior to admission.
+Doctor: I see, thank you for letting me know. Your vital signs look good today. Your temperature is normal, heart rate is 74 bpm, and blood pressure is 100/70 mmHg.
+Patient: That's good to hear.
+Doctor: During your physical examination, we did notice a systolic heart murmur. Did you experience any radiation into the neck?
+Patient: Yes, I did.
+Doctor: We also conducted some laboratory studies and found that you have thrombocytopenia with 123.000 μL platelets, white blood cell count of 4.3 × 109 L with neutrophils as the predominant type, and mild normocytic anemia. Your C-reactive protein (CRP) was elevated as 1.43 mg/dL, your erythrocyte sedimentation rate (ESR) was 32 mm/h, and creatine phosphokinase (CPK) was also elevated as 335 U/L.
+Patient: Oh, I see. What does that mean?
+Doctor: These results suggest that there may be an infective endocarditis (IE) causing your symptoms. We did some blood cultures and confirmed that you have Streptococcus thoraltensis. However, we also ruled out other infections caused by Brucella, Mycobacterium tuberculosis, Coxiella, and Leishmania.
+Patient: Okay, what's the next step?
+Doctor: We performed a transthoracic and transesophageal echo to check for IE, but there was no evidence of it. Instead, we found mild aortic stenosis. We also did a panoramic X-ray and found no lesions. We'll need to conduct further diagnostic procedures to determine the cause of your symptoms.
+Patient: Alright, thank you for explaining everything to me.
+Doctor: Of course. In the meantime, we'll continue to monitor your condition and make sure you're comfortable. If you have any questions or concerns, please don't hesitate to ask.",1,1,2,1,0,1
+"The authors report a case of a 36-year-old active man with no relevant medical history, who went to the emergency department due to a diffuse headache and dizziness, with a 3-day course after a long bicycle ride. The patient referred that these symptoms were usual after an intense physical activity as he regularly performed in cycle races. He was admitted to Neurology observation in the Emergency Room (ER). On examination, there were no evident de novo neurological signs. A cerebral CT was performed, and it was normal. He was then referred to Ear, Nose, and Throat (ENT) observation due to suspicion of peripheral vertigo.
+The ENT examination revealed a horizontal-rotatory nystagmus, with rapid phase to the right, that was exhaustible in the gaze, however with a normal head impulse test. The Neurology ER team assumed noncentral vertigo since at this time there was no evidence of any signs of a central cause, neither in physical examination nor in the imaging test performed. This diagnosis seemed the most likely to the team. He was admitted to the ENT ward, and symptomatic and medical treatment was initiated. There was clinical stabilization until the 3rd day, when sudden symptoms and signs emerged: ipsilateral downward fall, right hemifacial paresthesia, right hemifacial pain, ipsilateral limb ataxia with ataxic gait, and diplopia. An emergent magnetic resonance angiography revealed “(…) hyperintense area in T2 and T2 FLAIR in the dorsal lateral aspect of the right bulb that in the diffusion study showed a marked restriction (…).” In the arteriography study, it was identified that “an occlusion of the right vertebral artery was identified in segment V2, after showing progressive reduction and contour irregularity” ().
+The patient was transferred to the Cerebrovascular Accidents Unit (CVAU) and started treatment with antiplatelet therapy, rehabilitation with obvious improvement. At the time of hospital discharge (","Doctor: Hello, how are you feeling today?
+Patient: Not too good, I've been having a really bad headache and dizziness.
+Doctor: I see. Can you tell me more about your symptoms and your medical history?
+Patient: Sure. I'm an active person and I regularly compete in cycle races. These symptoms usually happen after a race.
+Doctor: Okay, I understand. We'll need to run some tests to figure out what's going on. You were admitted to the emergency department, correct?
+Patient: Yes, that's right.
+Doctor: And you were then referred to observation in the Neurology and ENT departments. Was there anything evident from the examination?
+Patient: No, there weren't any neurological signs.
+Doctor: I see. The ENT examination revealed a rotatory nystagmus with a rapid phase to the right. This led to suspicion of peripheral vertigo.
+Patient: Okay.
+Doctor: However, sudden symptoms emerged on the third day, including a downward fall, right hemifacial paresthesia, right hemifacial pain, ipsilateral limb ataxia with ataxic gait, and diplopia. A magnetic resonance angiography revealed a hyperintense area in T2 and T2 FLAIR in the dorsal lateral aspect of the right bulb that showed a marked restriction in the diffusion study. Then an occlusion of the right vertebral artery was identified in segment V2, after showing progressive reduction and contour irregularity in the arteriography study.
+Patient: Wow, that sounds serious.
+Doctor: Yes, it was. You were transferred to the Cerebrovascular Accidents Unit and started treatment with antiplatelet therapy and rehabilitation, and there was obvious improvement. You're here for your discharge today.
+Patient: Okay, thank you for explaining everything to me.",1,1,1,0,0,1
+"A 4-year old Saudi boy presented to the Hand Clinic for surgical correction of his angulated thumbs. He was an only child of non-consanguineous parents. He was born vaginally at term after an uneventful pregnancy. The birth weight and length were at the 30th centile. Family history was unremarkable. The patient had all the hallmark features of RSTS Type 1 including: intellectual disability, typical facial dysmorphism (highly-arched eyebrows, down-slanted palpebral fissures, a broad nasal bridge, a columella hanging below the alae nasi, low-set posteriorly-rotated ears, a thin upper lip, pouting of the lower lip, a highly-arched palate, and mild micrognathia), broad / flat/ angulated thumbs, broad big toes, and overlapping post-axial toes (Figs. , , and ). The child also had the following distinct features: a midline notch of the upper lip, a bifid tip of the tongue, a midline groove of the lower lip, plump fingers with broad / flat fingertips, and brachydactyly (Figs. , , ). The child had a history of cardiac surgery (correction of an atrial septal defect and repair of hemi-anomalous pulmonary venous drainage) as well as orchiopexy (for an undescended left testis). Full systemic examination and radiological investigations did not reveal any other defects. Both parents had no abnormalities.
+After informed consent was obtained, genomic DNA was extracted from the peripheral blood of the child and both parents. For testing, a combination of Next Generation Sequencing (NGS) and Sanger Sequencing was used to cover the full coding regions of the tested genes plus 20 bases of the non-coding DNA flanking each exon. The most important two syndromes with features overlapping with those of RSTS are the Cornelia de Lang (O","Doctor: Hello, how can I help you today?
+Patient: I'm here for surgical correction of my angulated thumbs.
+Doctor: Okay, can you tell me a little bit about your medical history?
+Patient: I was born vaginally at term after an uneventful pregnancy. My birth weight and length were at the 30th centile.
+Doctor: Do you have any family history of medical conditions?
+Patient: No, there's nothing to report.
+Doctor: I see. Based on your symptoms, you may have RSTS Type 1. Have you heard of this condition before?
+Patient: No, I haven't.
+Doctor: It's a genetic disorder that can cause intellectual disability, typical facial dysmorphism, and angular thumbs, just to name a few symptoms. Do any of these symptoms sound familiar to you?
+Patient: Yes, I do have some of these symptoms like highly-arched eyebrows and overlapping post-axial toes.
+Doctor: Okay, I would like to run some tests to confirm your diagnosis. After informed consent is obtained, we will extract genomic DNA from your peripheral blood and use a combination of Next Generation Sequencing and Sanger Sequencing to cover the full coding regions of the tested genes plus 20 bases of the non-coding DNA flanking each exon.
+Patient: Okay, sounds good.
+Doctor: The most important two syndromes with features overlapping with those of RSTS are the Cornelia de Lang and Rubinstein-Taybi syndromes. We'll be able to differentiate between these two with the test results.
+Patient: Got it.
+Doctor: After the tests, we'll discuss the results and determine the best course of treatment for you. Is there anything else you would like to know?
+Patient: No, that's all for now.
+Doctor: Alright. Thank you for coming in today.",1,1,1,0,0,1
+A 38-year-old female office worker presented with pain at the coccygeal region (tailbone) recurrent for 6 months with short periods of pain relief during vacation. Her pain increased with sitting on a hard object and did not respond to conservative treatment. There was no neurological deficit. X-ray showed type I coccyx (curved slightly forward). She underwent fluoroscopic guided impar ganglion block (sacrococcygeal approach) and showed good improvement. A coccygeal pillow was advised.,"Doctor: Hi there, how are you feeling today?
+Patient: I'm feeling okay, thanks.
+Doctor: So you presented with pain at the coccygeal region, is that correct?
+Patient: Yes, that's right.
+Doctor: And you've been experiencing this pain for about 6 months now with short periods of pain relief during vacation?
+Patient: Yes, that's correct.
+Doctor: I see. Your pain increases with sitting on a hard object and didn't respond to conservative treatment?
+Patient: Yes, that's right.
+Doctor: Okay, I understand. There was no neurological deficit, correct?
+Patient: No, there wasn't.
+Doctor: Your X-ray showed a type I coccyx, which is curved slightly forward. Based on your symptoms and X-ray, we decided to perform a fluoroscopic guided impar ganglion block using the sacrococcygeal approach.
+Patient: Okay.
+Doctor: And I'm happy to say that you showed good improvement after the block. Have you noticed any changes in your pain levels?
+Patient: Yes, I've noticed a significant improvement in my pain.
+Doctor: That's great to hear! We do advise that you use a coccygeal pillow to help relieve pressure on your tailbone while sitting. Do you have any other questions for me?
+Patient: No, I think that's everything. Thank you.
+Doctor: You're very welcome. Please schedule a follow-up appointment with us so we can monitor your progress.",1,1,0,0,0,1
+"We present the case of a 28-year-old pregnant woman with 35 weeks of gestation, from Loreto, Peru. She had four months of progressive dysphonia, loss of weight (5 kg), dry cough, and dysphagia which at the start was only for solid food and then even for liquids. One month before admission, the patient presented with odynophagia, fever, night sweats, and a productive cough. She was admitted to the emergency room due to respiratory distress and hemoptysis. At the time of her admission, she brought a laryngoscopy report that concluded laryngeal cancer; although a biopsy was not performed.
+During the physical examination, she was in a bad general condition. Tachypnea, dysphonia, and a decrease of the subcutaneous cellular tissue were evident. The cardiac and respiratory frequency were increased (110 bpm and 14 vpm) and a temperature of 39°C was recorded. No other alterations were found in the rest of the examination.
+Due to the history of chronic dysphonia and the laryngoscopy report that indicated the existence of laryngeal compromise, a differential diagnoses were proposed: laryngeal cancer and laryngeal tuberculosis. The diagnosis revealed respiratory and systemic symptoms suggesting the infectious etiology as the cause. A new laryngoscopy was performed, which reported a mamelonated laryngeal tumoration that compromised the arytenoid cartilage and the interarytenoid notch; the vocal cords presented irregularities with predomination of the right side, and their mobility was limited (Figures -) (Video ).
+Other tests were requested to evaluate the active tuberculosis disease at pulmonary stage; a sputum bacilloscopy showed positive result (+/+++) and the chest radiography showed bibasal lesions of fine nodular pattern with predominance of the right hemithorax, reticular opacities at the left apical level and an ipsilateral elevation of the hemidiaphragm; as described earlier, it was raised with a high suspicion that the case could be laryngeal tuberculosis secondary to","Doctor: Good morning, how are you feeling today?
+Patient: I'm not feeling very good, doctor.
+Doctor: I see. You mentioned in your medical history that you are pregnant. How far along are you?
+Patient: I'm currently 35 weeks pregnant.
+Doctor: Okay. I see that you have been experiencing some symptoms lately, can you tell me more about them?
+Patient: Yes, I've had progressive dysphonia, loss of weight, dry cough, and dysphagia. At first, it was only for solid food, but then it became difficult to swallow liquids too.
+Doctor: And did you experience any other symptoms before you were admitted to the emergency room?
+Patient: Yes, about a month before I was admitted, I had odynophagia, fever, night sweats, and a productive cough.
+Doctor: I see. During your physical examination, we noticed that you were in a bad general condition. Your respiratory rate was increased, and your temperature was recorded at 39°C. We also noticed a decrease in your subcutaneous cellular tissue. Did you notice any other alterations in your body?
+Patient: No, I didn't notice anything else.
+Doctor: Okay. Based on your history of chronic dysphonia and the laryngoscopy report that indicated the existence of laryngeal compromise, we proposed a differential diagnosis of laryngeal cancer and laryngeal tuberculosis. Upon further examination, we found a mamelonated laryngeal tumoration that compromised the arytenoid cartilage and the interarytenoid notch. The vocal cords presented irregularities with a predominance of the right side, and their mobility was limited. We also found evidence of active pulmonary tuberculosis in your sputum bacilloscopy and chest radiography.
+Patient: What does that mean, doctor?
+Doctor: It means that you have a tumor in your larynx, and you also have active tuberculosis in your lungs. We will need to start treatment immediately to address both conditions.
+Patient's Family: Is there anything we can do to help?
+Doctor: Yes, we will need your support to ensure that the patient receives the necessary treatment and care. We will also need to monitor her closely to ensure that she recovers fully.",1,1,2,1,0,1
+"Patient 2 (P2) was an 8-year-old girl diagnosed with a heterozygous de novo T385M missense mutation in the STAT1 gene that was previously reported as a GOF mutation (Figure ) (). P2 had recurrent and persistent oral Candida infections beginning at 8 months of age. She had received multiple drug treatments with fluconazole, nystatin, ketoconazole, and miconazole, with only partial improvements lasting from one to 3 weeks. At 8 years of age, after receiving unsuccessful treatments for oral candidiasis with nystatin and ketoconazole, she presented with severe oral candidiasis and was treated for 12 days with polyvalent IgG mouthwash.","Doctor: Hi there, how are you feeling today?
+Patient: I'm okay, thanks.
+Doctor: So, I see from your medical records that you were diagnosed with a missense mutation in the STAT1 gene. Can you tell me more about that?
+Patient: I'm not really sure. I just know that I've had recurrent Candida infections since I was a baby.
+Doctor: Ah, I see. Well, it looks like this mutation has been reported as a gain-of-function mutation, which means it's causing your immune system to overreact to things like Candida.
+Patient: Okay, I guess that makes sense.
+Doctor: And I see you've had a lot of drug treatments for these infections, including fluconazole, nystatin, ketoconazole, and miconazole. Have any of them worked for you?
+Patient: Some of them helped a little bit, but the infections always came back.
+Doctor: I see. And most recently, you presented with severe oral candidiasis and were treated with a polyvalent IgG mouthwash for 12 days. How did that work for you?
+Patient: It actually worked really well. My mouth feels a lot better now.
+Doctor: That's great to hear. Just to let you know, we may need to monitor your immune system more closely in the future, given your mutation. But for now, just continue to follow up with your regular check-ups and take any prescribed medications as directed. Do you have any questions for me?
+Patient: No, I think I understand everything. Thank you, Doctor. 
+Doctor: You're welcome. And if you do have any questions later on, don't hesitate to reach out to us. Have a great day! 
+(Patient's family enters the room)
+Doctor: I'm sorry to inform you, but unfortunately, we were not able to save P2. We did everything we could to treat her severe candidiasis, but unfortunately, it was too much for her immune system to handle. I'm so sorry for your loss.",1,1,2,0,0,1
+"A 67-year-old Caucasian woman presented to her primary care physician with a 1-year history of epigastric abdominal pain, occasional nausea, and emesis, and an unintentional 10 pound weight loss. An abdominal CT scan showed a 4.5 × 4.1 cm periampullary mass arising from the pancreas without evidence of metastatic disease. Interestingly, the CT scan also showed the colon to be in a dorsal position in relation to the SMA (). Laboratory analysis revealed normal liver function tests and serum CEA level but an elevated CA 19-9 level. At operative exploration, the entire transverse colon was found to be retroperitoneal and lies dorsal to the SMA and SMV. The duodenum coursed anterior rather than posterior to the mesenteric vessels. The SMA lies further to the right than normal and the SMV–portal vein confluence lies further to the left than usual. Inspection of the duodenum and head of the pancreas revealed a firm mass in the head of the pancreas. A classic pancreaticoduodenectomy was performed. The anterior placement of the duodenum made division of the jejunum beyond the ligament of Treitz relatively easy. The tumor dissected nicely away from the SMA with no uncinate process of the pancreas present. Our standard procedure is to bring the jejunal limb for reconstruction up in a retrocolic position, through a defect made in the transverse mesocolon to the right of the middle colic vessels. This limb is used to create the pancreaticojejunostomy, hepaticojejunostomy, and gastrojejunostomy. Due to the retroperitoneal position of the transverse colon, we brought the jejunal limb up in an antecolic position. Pathology revealed a moderately differentiated PDA with all surgical margins being free of tumor and 1 out of 11 specimen lymph nodes was positive for metastatic disease. The patient tolerated the procedure well and was discharged to home on postoperative day 5. The patient eventually developed recurrent disease and died 34 months postresection.","Doctor: Hi, how are you feeling today?
+Patient: I'm not feeling too good. I presented to my primary care physician with a history of epigastric abdominal pain, occasional nausea, and emesis, and an unintentional 10 pound weight loss.
+Doctor: That sounds concerning. Did your physician order any tests?
+Patient: Yes, I had an abdominal CT scan which showed a mass in my pancreas without evidence of metastatic disease.
+Doctor: I see. The CT scan also showed that your colon is in a dorsal position in relation to the SMA. Did you have any other lab tests done?
+Patient: Yes, my liver function tests were normal but my CA 19-9 level was elevated.
+Doctor: Okay, based on these results, we performed an operative exploration and found a firm mass in the head of your pancreas. We then performed a classic pancreaticoduodenectomy.
+Patient: That sounds like a complicated procedure. What was the reconstruction like?
+Doctor: Due to the retroperitoneal position of your transverse colon, we had to bring the jejunal limb up in an antecolic position. We used this limb to create the pancreaticojejunostomy, hepaticojejunostomy, and gastrojejunostomy.
+Patient: I see. What were the results of the pathology report?
+Doctor: The pathology revealed a moderately differentiated PDA with all surgical margins being free of tumor and 1 out of 11 specimen lymph nodes was positive for metastatic disease. You tolerated the procedure well and were discharged on postoperative day 5.
+Patient: That's good to hear. What happened after I was discharged?
+Doctor: Unfortunately, you eventually developed recurrent disease and died 34 months postresection. Our condolences to your family.",1,1,1,0,0,0
+"A 54-year-old male patient presented with a two-day history of severe left-sided, lower back pain which disappeared with the appearance of left-sided lower limb pain felt deep inside the whole lower limb and described by the patient as intense internal pressure (VAS 8/10). On examination, power was 5/5 with no sensory deficit and normal reflexes. The patient received NSAID painkillers and active bed rest was advised. However, on the patient's insistence, a lumbar spine X-ray and MRI were done which showed mild IVD protrusion. The patient was reassured and sent home. A week later the patient presented to the ER with an 18-hour history of heaviness and difficulty in raising the left foot when walking, with numbness along the lateral part of the leg and dorsum of the foot. The pain was moderate (VAS 5/10). No sphincter-related symptoms were observed. According to the patient, the decreased pain caused the delay in presentation, against the instructions on first evaluation. On examination of the foot dorsiflexion was 2/5 (movement on gravity alleviation) with decreased sensation along the left L5 dermatome. There were normal reflexes and sphincters. The patient underwent immediate, new lumbar MRI which showed a large disc sequester with disc migration. His status was fully explained; he was admitted and underwent microdiscectomy L4/5.
+The initial back pain lasted for 2 days, mostly caused by stretching and pressure on the weakened annulus fibrosis. This type of pain disappears or decreases once the annulus opens and nucleus pulposus leaks to the spinal or root canal. Initial left lower limb pain is a typical description of painful radiculopathy where mass pressure and inflammatory irritation of the nerve root and dorsal root ganglion cause neuropathic pain. This is different from nociceptive and referred pain types. Dorsal root ganglion hosts the cell bodies of sensory nerves with bidirectional connections (to the periphery and spinal cord). Injury","Doctor: Good morning, Mr. Johnson. How can I assist you today?
+Patient: Hi, doctor. I'm here because I've been experiencing severe pain in my lower back and left leg.
+Doctor: When did this pain first appear? Can you tell me a little about your medical history?
+Patient: It started about two days ago, and I've never had this kind of pain before.
+Doctor: I see. Have you noticed any sensory deficits or reflex abnormalities during this time?
+Patient: No, I haven't noticed anything like that.
+Doctor: Based on your symptoms, I recommend that you take NSAID painkillers and get some active bed rest. Does that sound good to you?
+Patient: Okay, I'll try that. But can I also get an X-ray and MRI just to be sure?
+Doctor: Well, I don't think it's necessary, but if that's what you want, we can do that for you.
+Patient: Thank you, doctor. I appreciate it.
+Doctor: You're welcome. Just remember that the best course of action is to rest and take the painkillers. Let us know if anything changes.
+Patient: Okay, I will.
+(A week later)
+Doctor: Hi, Mr. Johnson. It's good to see you again. Can you tell me what brings you in today?
+Patient: Yes, I've been having difficulty walking and numbness in my left leg. The pain has also decreased.
+Doctor: How long have you been experiencing these symptoms?
+Patient: About 18 hours.
+Doctor: Hmm, that's concerning. Let's take a look at you and do an examination.
+(Patient is examined)
+Doctor: Based on your examination and symptoms, I recommend that we do a new lumbar MRI to get a better look.
+Patient: Okay, whatever you think is best.
+Doctor: The MRI showed a large disc sequester with disc migration. We need to admit you for a microdiscectomy L4/5. Are you okay with that?
+Patient: Yes, I trust your judgment. Thank you for explaining everything to me.
+Doctor: Of course, it's my job. Just rest and follow our instructions. We'll take care of you.
+(Patient undergoes surgery but unfortunately dies)
+Doctor (to patient's family): I'm so sorry for your loss. We did everything we could to save him, but the injury was too severe. Please know that we are here for you during this difficult time.",2,1,1,0,0,0
+"A 32y old woman was referred to Yas hospital due to severe low abdominal pain and vomiting on May 2017. Ultrasonographic examination of her pelvis revealed bilateral ovarian cysts. During the 5 days before the admission, she had experienced severe right lower abdominal pain and vomiting especially after a meal. She had a long history of dysmenorrhea and, one cesarean delivery 3 years before. She was taking no medication. Her physical examination report included the temperature of 37°C, systolic blood pressure of 100 mmHg and heart rate of 120 beats per minute. The right lower quadrant of her abdomen was tender along with hypoactive bowel sounds. Laboratory data reported leukocytosis (16×109/L) with neutrophilia, C-reactive protein of 20 mg/dl and erythrocyte sedimentation rate of 60 mm/hr. Abdominal erect X-ray showed dilatation of small bowel segments. Colonoscopy was requested by gastroenterologist for finding the cause and excluding colon neoplasm. Diagnostic colonoscopy showed one small ulcer (8 mm) with the pressure effect of mass like lesion at cecum and scope couldn’t find the ileocecal valve. It was thought that a mass like lesion had caused the ileum obstruction. Colonoscopic biopsies were taken and histopathological examination revealed endometriosis. Afterwards, the patient was taken to the operating room for excision of the mass. At the exploration of the abdominal cavity, adequate exposure was attained by a vertical incision across the midline of the abdomen with a transverse extension to the right. The ileocecal part was covered by the omentum and was adherent to the abdominal wall. The ileocolic intussusception was seen without ischemic changes. Reduction of the intussusception was performed at first. After reduction, a firm mass was recognized at cecum, located close to the ileocecal valve. Then, the ileocecal resection was performed (). Pathological examination confirmed endometriosis.
+The postoperative period was uneventful and she was discharged on the third postoperative day. She was doing well at the 6 months follow up","Doctor: Hello, how are you feeling today?
+Patient: I'm feeling much better, thank you.
+Doctor: That's great to hear. I see here that you were referred to Yas hospital in May 2017. What brought you there originally?
+Patient: I was experiencing severe low abdominal pain and vomiting.
+Doctor: I see. And during your examination, they found bilateral ovarian cysts. Did you have any other symptoms?
+Patient: Yes, I had severe right lower abdominal pain and vomiting, especially after eating.
+Doctor: Okay, and did you have a history of dysmenorrhea or a cesarean delivery before?
+Patient: Yes, I did have a history of dysmenorrhea and had a cesarean delivery 3 years prior.
+Doctor: I see. During your physical examination, your temperature was 37°C, systolic blood pressure was 100 mmHg and heart rate was 120 beats per minute. Your right lower quadrant was tender, along with hypoactive bowel sounds. Your lab data also reported leukocytosis with neutrophilia, C-reactive protein of 20 mg/dl and erythrocyte sedimentation rate of 60 mm/hr. 
+Patient: Hmm, I didn't know all of that.
+Doctor: Yes, it's important to understand your medical history and test results. During a colonoscopy, they found a small ulcer with the pressure effect of a mass-like lesion at your cecum. The biopsy revealed endometriosis.
+Patient: Oh wow. What did they do next?
+Doctor: They took you to the operating room for excision of the mass. During the exploration of your abdominal cavity, they found that your ileocecal part was covered by the omentum and was adherent to the abdominal wall. They performed a reduction of the intussusception and then performed an ileocecal resection. Pathological examination confirmed endometriosis.
+Patient: Okay, and how was my postoperative period?
+Doctor: It was uneventful and you were discharged on the third postoperative day. You were doing well at the 6-month follow-up. Is there anything else you have questions about? 
+Patient: No, I think that covers everything. Thank you, doctor.
+Doctor: You're welcome. If you have any concerns in the future, don't hesitate to reach out to us.",1,1,2,1,0,1
+"A 71-year-old Caucasian woman with known diverticular disease of the colon and MM diagnosed 3 years previously, who was receiving chemotherapy with melphalan, bortezomib (a proteasome inhibitor), and a moderate dose of dexamethasone, presented to the emergency department of our hospital with abdominal pain, abdominal discomfort, and pneumoperitoneum. The clinical examination revealed acute abdomen with free air on an abdominal plain x-ray, and elevated levels of leukocyte cells at 18,000/μl and C-reactive protein at 145 mg/L. The patient had a family history free of cancer, and the last time she underwent colonoscopy was 1 year before admission. She had been diagnosed 3 years previously with stage II MM based on the International Staging System with a β2-microglobulin level of 4.2 mg/L and serum albumin level of 37 g/L. No study was performed for amyloidosis.
+An abdominal CT scan showed a 5-cm-wide, 12-cm-long sigmoid mass with medial extension into the fatty tissue at the same localization, pneumoperitoneum, diverticula, free abdominal fluid collections, and distended loops of the small and large intestines (Figs. and ). The patient was urgently admitted to the operating room as soon as the diagnosis of colonic perforation was established. An exploratory laparotomy was performed, with supra- and subumbilical midline incisions. Intraoperative findings were purulent peritonitis and an obstructive mass of the sigmoid colon causing massive central colonic distention (Figs. and ). The mass was extending toward the mesosigmoid. It was impossible to define if the mass might be originating from the mesocolon (Fig. ). After washing the whole abdomen meticulously, exploration revealed colonic perforation in the midtransverse colon at the mesocolic site. The mesocolon at this part was extremely inflammatory and had signs of venous congestion. An extended left colectomy was decided as the operation of choice for this patient. The operation was undertaken in an ontological fashion, with high ligation","Doctor: Hi there, how are you feeling today?
+Patient: Not good, Doctor. I'm in a lot of pain and discomfort.
+Doctor: I'm sorry to hear that. Can you tell me more about your symptoms?
+Patient: I've been having abdominal pain and discomfort, and I feel like there's air in my stomach.
+Doctor: Okay, I see. Based on your medical history, you have diverticular disease and were diagnosed with MM 3 years ago. Are you still receiving chemotherapy with melphalan, bortezomib, and dexamethasone?
+Patient: Yes, I am.
+Doctor: I see. And when did you first notice these symptoms?
+Patient: I presented to the emergency department yesterday.
+Doctor: I see. During the clinical examination, we found that you have an acute abdomen with free air on an abdominal plain x-ray. Your leukocyte cell count is elevated at 18,000/μl and your C-reactive protein level is at 145 mg/L. Do you have a family history of cancer?
+Patient: No, I don't.
+Doctor: Okay, good to know. When was the last time you had a colonoscopy?
+Patient: About a year ago.
+Doctor: I see. We performed an abdominal CT scan and found a 5-cm-wide, 12-cm-long sigmoid mass with medial extension into the fatty tissue at the same localization, pneumoperitoneum, diverticula, free abdominal fluid collections, and distended loops of the small and large intestines. We need to admit you urgently to the operating room as soon as possible to perform an exploratory laparotomy. 
+Patient: Okay, what does that involve?
+Doctor: We'll make supra- and subumbilical midline incisions and explore your abdomen to find the cause of the problem. Intraoperative findings might reveal purulent peritonitis and an obstructive mass of the sigmoid colon causing massive central colonic distention. If we find colonic perforation, we'll need to perform an extended left colectomy.
+Patient: That sounds serious. What are the risks?
+Doctor: Well, there's always a risk of complications with any surgery, but we'll take every precaution to ensure your safety. It's important that we operate as soon as possible to prevent further damage.
+Patient: Okay, I understand. What happens after the surgery?
+Doctor: You'll need to stay in the hospital for a few days to recover. We'll monitor you closely for any signs of infection or other complications. You'll also need to follow up with us regularly to make sure you're healing properly.",1,1,2,1,0,1

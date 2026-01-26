@@ -226,53 +226,6 @@ Doctor: I'm sorry to inform you that your loved one has passed away due to compl
 ### Example 5
 
 **Conversation:**
-Doctor: Hello, how are you feeling today?
-Patient: I'm in a lot of pain.
-Doctor: I see. Can you tell me about the injury you sustained?
-Patient: I'm a construction worker and I accidentally sprayed my left ring finger with Newton 103-S while wearing protective gloves.
-Doctor: I understand. Were you referred to us from a minor injuries unit?
-Patient: Yes, that's correct.
-Doctor: Okay, let's take a look at your finger. On examination, your finger is swollen and erythematous with necrotic skin on the volar aspect.
-Patient: Yes, that's where the spray hit me.
-Doctor: I see. There is no evidence of distal vascular compromise and the dorsal skin is well-perfused. However, you have a complete loss of sensation in the distribution of the ulnar digital nerve.
-Patient: Yes, that's right.
-Doctor: Additionally, there is decreased range of movement at both the proximal interphalangeal joint and distal interphalangeal joint.
-Patient: Yes, my finger feels stiff.
-Doctor: The palmar skin is not involved. Blood results and observations were within normal ranges. No X-rays were taken at the time of presentation. Broad-spectrum IV antibiotics were commenced, and the patient was taken to theatre for urgent debridement and washout under general anaesthetic.
-Patient: Okay, what does that mean?
-Doctor: We needed to remove the damaged tissue and clean the wound thoroughly. During the surgery, we discovered hardened concrete in the subcutaneous tissues.
-Patient: That sounds painful.
-Doctor: It was, but we needed to do it to prevent further damage. The pH of the wound was 8.5, in keeping with the alkaline substance injected. We continued to irrigate until the pH returned to 7.
-Patient: Does that mean the substance is out of my body?
-Doctor: Yes, we removed as much of it as we could. The ulnar digital artery was thrombosed, but the radial digital artery was patent. The concrete had penetrated the flexor sheath, surrounding both flexor tendons. Subsequent flexor sheath washout from A1 to A5 confirmed that we removed all of the concrete.
-Patient: Thank you for taking care of me.
-Doctor: Of course, it's our job to make sure you're healthy. Is there anything else you're concerned about?
-Patient: No, I just hope I can recover from this soon.
-Doctor: We'll make sure to follow up with you and monitor your progress. If you have any concerns, don't hesitate to contact us.
-
-**Scores:**
-{
-  "cc_opening": 1,
-  "cc_agenda_set": 1,
-  "cc_patient_narrative_supported": 1,
-  "cc_structure_signposting": 0,
-  "cc_summary_checkback": 1,
-  "cc_closing_next_steps": 1
-}
-
-**Rationale:**
-- cc_opening (1): Basic greeting present but lacks formal introduction or minimal warmth
-- cc_agenda_set (1): Acknowledges chief complaint but doesn't explore full agenda or multiple concerns
-- cc_patient_narrative_supported (1): Some patient expression allowed but frequent redirections or closed-ended questions dominate
-- cc_structure_signposting (0): No clear signposting, jumps between topics without transitions, disorganized
-- cc_summary_checkback (1): Brief acknowledgments but minimal active verification of patient comprehension
-- cc_closing_next_steps (1): Mentions follow-up or monitoring but lacks specificity or clear action plan
-
----
-
-### Example 6
-
-**Conversation:**
 Doctor: Hello there, how are you feeling today?
 Patient: I'm not feeling too great, I've been having a severe depressive episode.
 Doctor: I see. According to your medical history, you developed your first depressive episode with comorbid panic attacks about 10 years ago.
@@ -309,7 +262,7 @@ Doctor: I understand. Your depressive symptoms at baseline were severe according
 
 ---
 
-### Example 7
+### Example 6
 
 **Conversation:**
 Doctor: Hello, how are you feeling today?
@@ -360,54 +313,7 @@ Family: Thank you, Doctor. We appreciate all of your efforts.
 
 ---
 
-### Example 8
-
-**Conversation:**
-Doctor: Good morning, what brought you here today?
-Patient: My baby girl is admitted to the neonatal intensive care unit.
-Doctor: What was the chief complaint?
-Patient: Poor oral intake and she's been lethargic.
-Doctor: How has her swallowing been?
-Patient: She's only been able to swallow 10 to 20 mL of formula at a time in the last two days.
-Doctor: Has the amount of urine decreased?
-Patient: No, diapers have been changed 10 to 14 times per day.
-Doctor: Any vomiting or diarrhea?
-Patient: No, neither of those symptoms have been observed.
-Doctor: Was she born via cesarean section?
-Patient: Yes, she was.
-Doctor: Were there any abnormal findings during the prenatal and immediate postnatal periods?
-Patient: No, nothing was noted.
-Doctor: Any family history of medical issues?
-Patient: No, our family history is unremarkable.
-Doctor: At admission, her weight was 3100 g, length was 53 cm, and head circumference was 36 cm. Were her vital signs appropriate for her age?
-Patient: Yes, her heart rate was 150 beats/min, blood pressure was 78/50 mmHg, respiratory rate was 48 breaths/min, and body temperature was 36.5 °C.
-Doctor: Were there any physical abnormalities detected?
-Patient: Yes, she has both thumbs in palms, frontal bossing, prominent upper lip, high arched palate, sparse frontal scalp hair, and bilateral 5th finger clinodactyly.
-Doctor: An initial capillary blood gas analysis showed severe metabolic acidosis. We infused 20 mL/kg normal saline intravenously for over 1 hour. Were there any other laboratory results obtained?
-Patient: Yes, at admission, her serum sodium was 113.3 mEq/L and her serum potassium was 8.79 mEq/L.
-Doctor: Thank you for the information. We will continue to monitor her closely and perform further laboratory tests.
-
-**Scores:**
-{
-  "cc_opening": 1,
-  "cc_agenda_set": 0,
-  "cc_patient_narrative_supported": 1,
-  "cc_structure_signposting": 1,
-  "cc_summary_checkback": 1,
-  "cc_closing_next_steps": 1
-}
-
-**Rationale:**
-- cc_opening (1): Basic greeting present but lacks formal introduction or minimal warmth
-- cc_agenda_set (0): No attempt to establish agenda or understand patient's full set of concerns
-- cc_patient_narrative_supported (1): Some patient expression allowed but frequent redirections or closed-ended questions dominate
-- cc_structure_signposting (1): Some organization present but transitions are implicit or inconsistent
-- cc_summary_checkback (1): Brief acknowledgments but minimal active verification of patient comprehension
-- cc_closing_next_steps (1): Mentions follow-up or monitoring but lacks specificity or clear action plan
-
----
-
-### Example 9
+### Example 7
 
 **Conversation:**
 Doctor: Hello, how are you feeling today?
@@ -450,48 +356,7 @@ Doctor: Unfortunately, the patient passed away due to complications related to t
 
 ---
 
-### Example 10
-
-**Conversation:**
-Doctor: Good morning, Mr. Smith. How are you feeling today?
-Patient: Hmm, not so good, doctor. I've been coughing a lot and feeling very weak lately.
-Doctor: I see. Can you tell me more about your past medical history?
-Patient: Well, I have coronary artery disease, congestive heart failure, atrial fibrillation, hypertension, interstitial lung disease, and obstructive sleep apnea.
-Doctor: Alright, thank you for that information. When did you start experiencing these symptoms?
-Patient: About two weeks ago, doctor.
-Doctor: And what were those symptoms exactly?
-Patient: I had a productive cough, fever, shortness of breath, and just a general feeling of malaise.
-Doctor: I see. When you came in, your vitals showed a blood pressure of 77/35 mmHg, heart rate of 122 bpm, respiratory rate of 38 bpm, a temperature of 102 F, and oxygen saturation of 98% on 15 L of oxygen. You were also diaphoretic and had decreased breath sounds in the right lung field. On palpation of the abdomen, there was right upper quadrant fullness. Based on your history and presentation, we ran some laboratory studies and found some abnormalities.
-Patient: Okay, what did you find?
-Doctor: Your white blood cell count was elevated, along with neutrophilia, bicarbonate levels were low, and lactic acid was high. Your anion gap was also elevated, and your ALT and AST liver enzymes were elevated. We also found a right pleural effusion on your chest x-ray. Because of your respiratory failure, we had to intubate you and start you on antibiotics, but unfortunately, we didn't see any improvement in your blood pressure.
-Patient: I see. What did you do next?
-Doctor: We started you on intravenous vasopressor support with norepinephrine and vasopressin and admitted you to the intensive care unit. We also did an abdominal ultrasound, which showed an acute complex heterogeneous hypoechoic mass-like lesion in the right hepatic lobe and found elevated liver enzymes and fever.
-Patient: Okay, and what did the CT scan show?
-Doctor: The CT scan revealed a complex low-density right hepatic lobe subcapsular lesion measuring 13 × 8 × 7 cm, directly abutting the right anterior diaphragm, along with diffuse gross gallbladder wall thickening with cholelithiasis and a moderate right pleural effusion. Due to this, we had to perform chest tube placement.
-Patient: Hmm, I see. So what's the next step for me, doctor?
-Doctor: At this point, we will need to monitor you closely in the ICU and continue with your treatment plan. We will also need to further investigate the hepatic lesion and work on managing your other medical conditions. If there are any changes or concerns, we will be sure to inform you and your family.
-
-**Scores:**
-{
-  "cc_opening": 1,
-  "cc_agenda_set": 2,
-  "cc_patient_narrative_supported": 1,
-  "cc_structure_signposting": 0,
-  "cc_summary_checkback": 1,
-  "cc_closing_next_steps": 2
-}
-
-**Rationale:**
-- cc_opening (1): Basic greeting present but lacks formal introduction or minimal warmth
-- cc_agenda_set (2): Explicitly invites patient to share full concerns, explores priorities comprehensively
-- cc_patient_narrative_supported (1): Some patient expression allowed but frequent redirections or closed-ended questions dominate
-- cc_structure_signposting (0): No clear signposting, jumps between topics without transitions, disorganized
-- cc_summary_checkback (1): Brief acknowledgments but minimal active verification of patient comprehension
-- cc_closing_next_steps (2): Specific follow-up plan with clear next steps, monitoring described, patient/family informed
-
----
-
-### Example 11
+### Example 8
 
 **Conversation:**
 Doctor: Hello, how are you feeling today?
@@ -528,7 +393,7 @@ Doctor: I'm afraid the situation is very serious. Despite our efforts, his condi
 
 ---
 
-### Example 12
+### Example 9
 
 **Conversation:**
 Doctor: Hello, how are you feeling today?
@@ -573,7 +438,7 @@ Doctor: Of course. And if you have any questions or concerns, don't hesitate to 
 
 ---
 
-### Example 13
+### Example 10
 
 **Conversation:**
 Doctor: Hi there, how are you feeling today?
@@ -618,41 +483,179 @@ Doctor: Of course, please don't hesitate to reach out if you have any further qu
 
 ---
 
-### Example 14
+### Example 11
 
 **Conversation:**
-Doctor: Hi there, how are you feeling today?
-Patient: I'm feeling okay, thank you.
-Doctor: I see that you were referred to our hospital for the evaluation of a non-specific cough. Can you tell me more about that?
-Patient: Yeah, I've had this cough for about 6 weeks now, and it just won't go away.
-Doctor: Okay, and did you notice any other symptoms?
-Patient: No, not really.
-Doctor: During the physical examination, we found that you had diminished breath sounds on the right side of your lung. Did you notice any discomfort or pain on that side?
-Patient: No, I haven't felt any pain.
-Doctor: We did some tests, including a Chest radiograph and a computed tomography scan, which confirmed that you have a mass in your right lung. The good news is that we were able to remove it surgically, as antibiotics weren't effective. 
-Patient: Oh, wow. Is everything okay now?
-Doctor: Unfortunately, the histological analysis showed that the mass consisted of disorganization of the normal bronchoalveolar parenchyma, myofibroblastic cells, and inflammatory cell infiltrates. We did not find any lymphadenopathy, but we had to perform a lobectomy of both upper lobe and middle lobe. 
-Patient: I see. What does that mean for me?
-Doctor: Well, we will need to monitor your recovery closely and schedule some follow-up appointments to make sure that everything is healing properly. We also need to keep an eye on your erythrocyte sedimentation rate, haemoglobin, and leucocyte count to make sure that there are no complications.
-Patient: Okay, I understand. Thank you for your help.
-Doctor: Of course, and please let us know if you experience any discomfort or new symptoms. We will be here to help you every step of the way.
+Doctor: Hi there, you presented with multi-fragmentary fractures of the lower third of right tibia and fibula as a consequence of a motorcycle accident. How are you feeling?
+Patient: Hmm, not too good actually. I'm in a lot of pain.
+Doctor: I'm sorry to hear that. Upon hospital admission, you were alert, coherent and had no motor deficits. Your vital signs and the rest of a physical examination were normal. You were admitted to the hospital for surgical stabilization. 
+Patient: Okay.
+Doctor: Unfortunately, forty-eight hours after admission, you developed confusion and agitation followed by a rapid decline in your level of consciousness that progressed to coma with bilateral extensor posturing. 
+Patient: Oh no.
+Doctor: Your pupils were equal, slightly large and reactive. You were tachypneic (44/min), tachycardic (137/min), febrile (39.3°C) and hypertensive (147/101mmHg). Your pulse oximetry was 92% on room air. Petechial hemorrhages were noted in the sclerae, conjunctivae, buccal mucosa and the upper third of the thorax.
+Patient: What does that all mean?
+Doctor: It means we needed to initiate resuscitation with fluids, supplemental oxygen, tracheal intubation and mechanical ventilation under deep sedoanalgesia. A head computed tomography (CT) scan revealed multiple and bilateral frontal subcortical hypodense areas without a midline shift. No hemorrhage was evident, and the basal cisterns and sulci remained visible. 
+Patient: Okay.
+Doctor: A chest CT was normal except for small bilateral basal atelectasis with no evidence of pulmonary embolism. Transthoracic echocardiography revealed normal ventricles, normal valve function and an absence of patent foramen oval or signs of pulmonary hypertension. An electroencephalogram revealed diffuse slowing without epileptiform discharges. The laboratory parameters were normal except for elevations of the following inflammation markers: leukocytosis 17300/mm3 and C-reactive protein (CRP) 141mg/L. Thrombocytopenia (110.000/mm3) was also noticed. A diagnosis of FES was reached.
+Patient: FES? What's that?
+Doctor: Fat embolism syndrome. It's a rare but serious condition that can occur after a fracture. We're doing everything we can to treat you, but I need you to stay here for further observation and treatment. We'll keep you updated on your progress.
 
 **Scores:**
 {
   "cc_opening": 1,
-  "cc_agenda_set": 1,
+  "cc_agenda_set": 0,
   "cc_patient_narrative_supported": 1,
   "cc_structure_signposting": 0,
-  "cc_summary_checkback": 1,
-  "cc_closing_next_steps": 2
+  "cc_summary_checkback": 0,
+  "cc_closing_next_steps": 0
 }
 
 **Rationale:**
 - cc_opening (1): Basic greeting present but lacks formal introduction or minimal warmth
-- cc_agenda_set (1): Acknowledges chief complaint but doesn't explore full agenda or multiple concerns
+- cc_agenda_set (0): No attempt to establish agenda or understand patient's full set of concerns
 - cc_patient_narrative_supported (1): Some patient expression allowed but frequent redirections or closed-ended questions dominate
 - cc_structure_signposting (0): No clear signposting, jumps between topics without transitions, disorganized
-- cc_summary_checkback (1): Brief acknowledgments but minimal active verification of patient comprehension
+- cc_summary_checkback (0): No summaries or checking for understanding throughout conversation
+- cc_closing_next_steps (0): Abrupt ending with no follow-up plan or next steps discussed
+
+---
+
+### Example 12
+
+**Conversation:**
+Doctor: Good morning, how are you feeling today?
+Patient: Not so good, I've been having constipation.
+Doctor: Okay, let's take a look. Have you had a colonoscopy before?
+Patient: No, I haven't.
+Doctor: We did a colonoscopy and found a tumor in your lower rectum. Here's a picture of it (shows the patient the Fig).
+Patient: What does that mean?
+Doctor: The biopsy findings indicated that it's a moderately differentiated tubular adenocarcinoma. It's a type of cancer.
+Patient: Oh no, what should I do?
+Doctor: We've diagnosed you with cT3N1M0 stage IIIa rectal cancer. We'll need to start neoadjuvant chemoradiotherapy. That's a combination of pelvic radiation and chemotherapy with irinotecan and S-1.
+Patient: Okay, I'll do whatever it takes.
+Doctor: After the therapy, you came in on an emergency basis complaining of no defecation for several days. We diagnosed you with LBO based on CT findings.
+Patient: What's LBO?
+Doctor: It means you had a complete obstruction, but we were able to place a stent across the obstruction to relieve your symptoms. Here's a picture of the stent placement (shows the patient the Fig).
+Patient: That helped a lot.
+Doctor: Good to hear. We performed a laparoscopic low anterior resection with diverting ileostomy 3 weeks after SEMS placement. The operation lasted 265 minutes, and there was very little blood loss.
+Patient: And what was the diagnosis?
+Doctor: The pathological diagnosis showed that we were able to remove the tumor successfully. However, the cancer had spread to some nearby lymph nodes.
+Patient's Family: We're sorry to inform you that the patient eventually passed away due to complications from the cancer.
+
+**Scores:**
+{
+  "cc_opening": 1,
+  "cc_agenda_set": 0,
+  "cc_patient_narrative_supported": 0,
+  "cc_structure_signposting": 0,
+  "cc_summary_checkback": 0,
+  "cc_closing_next_steps": 0
+}
+
+**Rationale:**
+- cc_opening (1): Basic greeting present but lacks formal introduction or minimal warmth
+- cc_agenda_set (0): No attempt to establish agenda or understand patient's full set of concerns
+- cc_patient_narrative_supported (0): Clinician-dominated with frequent interruptions, doesn't allow patient to complete thoughts
+- cc_structure_signposting (0): No clear signposting, jumps between topics without transitions, disorganized
+- cc_summary_checkback (0): No summaries or checking for understanding throughout conversation
+- cc_closing_next_steps (0): Abrupt ending with no follow-up plan or next steps discussed
+
+---
+
+### Example 13
+
+**Conversation:**
+Doctor: Hello, how are you feeling today?
+Patient: I'm okay, thank you.
+Doctor: So, during your regular physical examination, a solid mass was found in your right kidney via ultrasonography. Did you ever complain about backache, abdominal pain, urinary irritation, hematuria, or dysuria?
+Patient: No, I didn't.
+Doctor: That's good to hear. Do you have any history of tuberous sclerosis?
+Patient: No, I don't.
+Doctor: Great. During the physical examination, did you feel any tenderness in the costovertebral angle, hypochondriac point, or ureteral point?
+Patient: No, I didn't feel any tenderness.
+Doctor: Alright. The computed tomography (CT) scan showed a well-defined solid tissue mass in the right kidney that suggested renal cell carcinoma. (Shows Fig. A) After the diagnosis, you received a radical right nephrectomy without any radiochemotherapy. How are you feeling after the surgery?
+Patient: I'm feeling a bit sore, but it's manageable.
+Doctor: That's normal. After the nephrectomy, the tumor was examined and found to have a volume of 7.5 × 6 × 4 cm3. The tumor cells were scattered within the tumor or organized closely in nests separated by glassy collagen fibrils (Shows Fig. A). The tumor cells possessed more than 1 round-to-oval atypical nuclei, with irregularly distributed coarse chromatin and prominent nucleoli (Shows Fig. C). The mitotic count was about 2 in 50, under high power field (HPF; Shows Fig. D). Regretfully, the tumor cells were found infiltrating into the surrounding renal parenchyma. (Shows Fig. B) Do you have any questions about the examination?
+Patient: No, not really.
+Doctor: Alright. Immunohistochemical staining showed that the tumor cells tested positive for MelanA (Shows Fig. F), were focally positive for HMB-45 (Shows Fig. E) and vimentin, and 10% positive for Ki67. Tests for the following were negative: SOX-10, S-100, RCC, CD10, PAX8, PAX2, SMA, desmin, cal. This means that the tumor was not caused by any of these factors. Do you have any questions about the testing?
+Patient: No, I don't think so.
+Doctor: Alright. It's important for you to have follow-up appointments to monitor your condition. We will discuss this further during your next appointment.
+
+**Scores:**
+{
+  "cc_opening": 1,
+  "cc_agenda_set": 0,
+  "cc_patient_narrative_supported": 0,
+  "cc_structure_signposting": 0,
+  "cc_summary_checkback": 0,
+  "cc_closing_next_steps": 1
+}
+
+**Rationale:**
+- cc_opening (1): Basic greeting present but lacks formal introduction or minimal warmth
+- cc_agenda_set (0): No attempt to establish agenda or understand patient's full set of concerns
+- cc_patient_narrative_supported (0): Clinician-dominated with frequent interruptions, doesn't allow patient to complete thoughts
+- cc_structure_signposting (0): No clear signposting, jumps between topics without transitions, disorganized
+- cc_summary_checkback (0): No summaries or checking for understanding throughout conversation
+- cc_closing_next_steps (1): Mentions follow-up or monitoring but lacks specificity or clear action plan
+
+---
+
+### Example 14
+
+**Conversation:**
+Doctor: Good morning, Mrs. Rodriguez. I'm Dr. Thompson, your oncologist. Before we begin, how would you prefer I address you?
+Patient: Maria is fine, thank you.
+Doctor: Thank you, Maria. I know you've been through a great deal recently with the surgery and now waiting for this appointment. Before I share the results, I want to understand what's been on your mind. What questions or concerns are most important for you today?
+Patient: I just want to know if the cancer has spread. And what happens next. I have two young children and I need to be there for them.
+Doctor: I hear how important your children are to you, and I completely understand that concern. Is there anything else you'd like to discuss today, anything else that's been worrying you?
+Patient: Yes, actually. My mother had colon cancer and my aunt had liver cancer. I'm worried this runs in my family and what that means for my daughters.
+Doctor: That's a very important concern, and I'm glad you brought it up. We'll definitely address that. Anything else before we go through everything together?
+Patient: No, I think those are the main things.
+Doctor: Alright, Maria. Let me outline how I'd like our conversation to go today. First, I'll explain what we found from your surgery and what it means. Second, I'll talk about your treatment plan going forward. Third, we'll discuss the family history question and what it means for your daughters. Does that structure work for you?
+Patient: Yes, that sounds good.
+Doctor: Good. Now, I want to start by sharing some reassuring news. We removed the cancer completely, and the margins are clear, meaning we got it all. The lymph node we tested was negative, which means there's no evidence the cancer has spread to your lymph nodes. How are you feeling hearing that?
+Patient: That's a relief. But what exactly did you find?
+Doctor: Let me explain what the pathology showed. You had what we call multifocal breast cancer, meaning there were a few separate areas of cancer in your breast. The largest was about 5.5 centimeters. The type of cancer has features of both ductal and lobular carcinoma, which just describes how the cells look under the microscope. Are you following so far?
+Patient: Yes, I think so. Is that worse than just one type?
+Doctor: That's a good question. Having both types doesn't necessarily make it more aggressive. What matters more is what we call the tumor characteristics. Your cancer is what we call hormone receptor positive, meaning it responds to estrogen and progesterone. This is actually good news because it gives us more treatment options.
+Patient: What does that mean for treatment?
+Doctor: I'll get to that in a moment. First, let me explain one more test we did. We sent your tumor for a test called Oncotype DX, which helps us understand how likely the cancer is to come back and whether chemotherapy would benefit you. Your score was 16, which is in the low range. This tells us the cancer has a lower chance of returning, and importantly, chemotherapy would only add about 1.6% benefit for someone your age with this score.
+Patient: So I don't need chemotherapy?
+Doctor: Based on this score, the benefit from chemotherapy is very small. However, I want to discuss the options with you so we can decide together. Let me explain what I recommend and why, and then I want to hear your thoughts.
+Patient: Okay.
+Doctor: The standard treatment plan I recommend includes three parts. First, you've already had the surgery, and we've completed radiation therapy to your chest wall, which reduces the risk of the cancer coming back in that area. Second, because your cancer is hormone receptor positive, I strongly recommend hormone therapy, a medication called tamoxifen, which you would take daily for five to ten years. This significantly reduces the risk of recurrence. Third, regarding chemotherapy, given your low Oncotype score, I don't think the small benefit outweighs the side effects for you. But I want to know how you feel about this.
+Patient: I was dreading chemotherapy. If it's not going to help much, I'd rather not do it. But I'm worried about making the wrong choice.
+Doctor: That's completely understandable. Let me put some numbers to this. Without any additional treatment after surgery and radiation, there's roughly a 15% chance of the cancer returning over the next ten years. With hormone therapy alone, that drops to about 7-8%. Adding chemotherapy might reduce it by another 1-2%. So you'd be going through significant side effects for a relatively small additional benefit. Does that help clarify things?
+Patient: Yes, it does. I think I'll skip the chemotherapy but definitely do the hormone therapy.
+Doctor: I think that's a reasonable decision, Maria. Now, let me address your question about family history. We did genetic testing on your tumor, and it did not show any of the known genetic mutations we look for, including BRCA1 and BRCA2. This is reassuring. However, given your family history of colorectal and hepatobiliary cancers, I would recommend you meet with a genetic counselor who can do a more comprehensive assessment and discuss what screening might be appropriate for your daughters when they're older.
+Patient: That makes me feel better. Should my daughters be tested?
+Doctor: Genetic testing is typically not done on children because there are no preventive interventions for them at a young age. But when they reach adulthood, around 25 to 30, they can make an informed decision about testing after meeting with a genetic counselor. For now, the most important thing is that you're here, you're getting treated, and you're going to be there for them.
+Patient: Thank you for saying that.
+Doctor: Now let me summarize what we've discussed. Your surgery successfully removed all the cancer with clear margins and negative lymph nodes. You've completed radiation. You'll start tamoxifen, which you'll take daily, and we've decided together that chemotherapy isn't necessary given your Oncotype score. You'll also meet with a genetic counselor about your family history. Do you have any questions about any of this?
+Patient: How often will I need to come back for checkups?
+Doctor: Great question. I'll see you every three to four months for the first two years, then every six months for years three to five, then annually after that. You'll also have yearly mammograms on your remaining breast. Now, there are some things I need you to watch for between appointments. If you notice any new lumps anywhere, especially in your other breast, under your arms, or along your surgical scar, please call us right away. Also watch for persistent bone pain, unexplained shortness of breath, or any symptoms that concern you. What should you watch for?
+Patient: New lumps, bone pain, or trouble breathing, and anything that worries me.
+Doctor: Exactly right. Don't hesitate to call, even if it turns out to be nothing. It's always better to check. Is there anything else you'd like to ask me, Maria?
+Patient: No, I think you've explained everything really well. Thank you for taking the time to go through all of this with me.
+Doctor: You're very welcome. You've been through a lot, and you've handled it with real strength. I'll see you in three months, but remember, my nurse can always get me a message if you have concerns before then. Take care of yourself.
+
+**Scores:**
+{
+  "cc_opening": 2,
+  "cc_agenda_set": 2,
+  "cc_patient_narrative_supported": 2,
+  "cc_structure_signposting": 2,
+  "cc_summary_checkback": 2,
+  "cc_closing_next_steps": 2
+}
+
+**Rationale:**
+- cc_opening (2): Professional introduction with name, warm greeting, establishes positive rapport
+- cc_agenda_set (2): Explicitly invites patient to share full concerns, explores priorities comprehensively
+- cc_patient_narrative_supported (2): Uses open-ended questions, allows patient to tell story without interruption, validates perspective
+- cc_structure_signposting (2): Clear transitions with explicit signposting ('Now...', 'At age X...'), well-organized flow
+- cc_summary_checkback (2): Regular verification of understanding ('Is that correct?', 'Does that make sense?'), summarizes key points
 - cc_closing_next_steps (2): Specific follow-up plan with clear next steps, monitoring described, patient/family informed
 
 ---
@@ -660,52 +663,149 @@ Doctor: Of course, and please let us know if you experience any discomfort or ne
 ### Example 15
 
 **Conversation:**
-Doctor: Hello, how are you feeling today?
-Patient: Hmm, not too great actually. I've been having severe and progressive abdominal pain for the past three days.
-Doctor: I see. Can you tell me more about the pain? Where is it located and does it get worse with movement?
-Patient: Yes, it's sharp and localized to the left side of my abdomen. And yes, it does get worse with movement.
-Doctor: Have you experienced any nausea or vomiting?
-Patient: Yes, I've been feeling nauseous but haven't vomited.
-Doctor: Have you noticed any chest pain, shortness of breath, or fever/chills?
-Patient: No, none of those symptoms.
-Doctor: Okay, I'm going to order some tests to see what's going on. We'll start with an abdominal X-ray.
-Patient: Alright.
-Doctor: The X-ray showed small bowel dilation and adynamic air-fluid levels, with suspicion of either ileus or partial SBO.
-Patient: What does that mean?
-Doctor: It means that there may be an obstruction in your small intestine causing the symptoms you're experiencing. We'll do a CT scan to get a better idea.
-Patient: Okay.
-Doctor: The CT scan showed decompressed distal and terminal ileum consistent with SBO, as well as soft tissue thickening within the central abdomen deep to the umbilicus in a region of dilated and decompressed ileum, which could possibly be the cause of obstruction and perhaps due to adhesions or mass.
-Patient: That sounds serious.
-Doctor: Yes, it is concerning. Your past medical history is significant for an open ventral hernia repair with mesh approximately four years ago, as well as multiple instances of SBO. Can you tell me more about the tenderness and mass at the side of your past hernia repair?
-Patient: Oh, that's been a long-standing issue. I've had tenderness and a mass there for a while now.
-Doctor: On examination, I found abdominal tenderness to palpation on the left side with rebound, severe tenderness at the umbilicus with a palpable mass, and you were unable to tolerate nasogastric tube (NGT) placement.
-Patient: What does all of that mean?
-Doctor: It means that there is a palpable mass in your abdomen that is causing tenderness and may be obstructing your small intestine. We will need to perform surgery to remove the obstruction.
-Patient: Surgery?
-Doctor: Yes, I'm afraid so. It's the best course of action to ensure your health and wellbeing.
-Patient: Okay.
-Doctor: I'll need to speak with your family to discuss the surgery and what to expect afterwards. In the meantime, I'll prescribe some pain medication to help manage your symptoms.
-Patient: Thank you, doctor.
+Doctor: Good afternoon, Mrs. Patterson. I'm Dr. Hernandez, the neurologist. I've been asked to see you because of the new symptoms you've been experiencing. Before we dive into the test results, I'd like to hear from you. Can you tell me in your own words what's been happening?
+Patient: It's been a nightmare, honestly. For months I've felt terrible, no appetite, exhausted all the time, losing weight without trying. Then the back pain started, and now my legs feel weak and tingly. I've even had some accidents with my bladder, which is humiliating.
+Doctor: I'm so sorry you've been going through all of this. It sounds incredibly difficult. Thank you for sharing that with me. Is there anything else that's been concerning you?
+Patient: Yes. Nobody seems to know what's wrong with me. I've had test after test, and I still don't have answers. I'm scared it's something serious, like cancer.
+Doctor: That fear makes complete sense, especially with everything you've been through. Is there anything else you'd like to discuss today?
+Patient: I just want to know what's causing all this. And what can be done about it.
+Doctor: I understand completely. Let me tell you how I'd like to approach our conversation. First, I'm going to ask you some more detailed questions about your symptoms to make sure I fully understand what you're experiencing. Then I'll explain what the tests have shown us so far. Finally, we'll talk about what happens next. Does that sound okay?
+Patient: Yes, please.
+Doctor: Let's start with your legs. When did you first notice the weakness?
+Patient: About two weeks ago. At first I thought I was just tired, but then I started having trouble with stairs. Now I feel unsteady when I walk, like I might fall.
+Doctor: And the numbness and tingling, where exactly do you feel that?
+Patient: It started in my feet and has gradually moved up to about my knees. It's like pins and needles, but constant.
+Doctor: What about the bladder problems, when did those start?
+Patient: About a week ago. I can't always tell when I need to go, and sometimes I don't make it in time. I've also been constipated.
+Doctor: I appreciate you telling me all of this, I know it's not easy to discuss. Now, can you tell me what you think might be causing these symptoms?
+Patient: I don't know. I keep thinking about the bone lesions they found on the CT scan months ago. Could they be related? And the fact that they haven't found a cancer yet, that terrifies me. Like maybe it's hiding somewhere.
+Doctor: Those are very reasonable thoughts. What worries you most about all of this?
+Patient: That it's something that can't be treated. That I'm going to keep getting worse. I live alone, and the thought of not being able to walk or take care of myself is overwhelming.
+Doctor: I hear you. Independence is so important, and the uncertainty must be incredibly hard to live with. What are you hoping we can accomplish?
+Patient: I just want a diagnosis. And if there's something wrong, I want to know if it can be fixed.
+Doctor: That's what we're working toward, and I want to share with you what we've learned so far. Can I do that now?
+Patient: Yes, please.
+Doctor: The MRI of your brain and spine showed something significant. There's abnormal enhancement, which means something is coating the membranes that surround your spinal cord and brainstem. This is called leptomeningeal involvement. Are you with me so far?
+Patient: I think so. Something is affecting my spinal cord?
+Doctor: Exactly. The covering around your spinal cord. This explains your leg weakness, the numbness and tingling, the bladder and bowel problems, and the balance issues. When this area is affected, all of those symptoms can occur because the nerves that control those functions travel through there.
+Patient: What's causing it?
+Doctor: We did a lumbar puncture, a spinal tap, to analyze the fluid around your spine. It showed elevated protein and white blood cells, which confirms there's something abnormal happening there. We're now running additional tests on that fluid to determine exactly what's causing it.
+Patient: Is it cancer?
+Doctor: I want to be honest with you. Given everything we're seeing, including the bone lesions, the lymph node findings, the weight loss, and now this spinal involvement, we are concerned about the possibility of a malignancy. However, we haven't confirmed that yet. The spinal fluid tests will help us get closer to an answer.
+Patient: How long until we know?
+Doctor: Some results will come back within a few days. Others, like specific cancer markers, may take up to a week. I know waiting is hard, but I want us to have accurate information before we make any treatment decisions.
+Patient: What happens if it is cancer?
+Doctor: If it turns out to be cancer that has spread to the leptomeninges, there are treatments available. They might include chemotherapy delivered directly into the spinal fluid, radiation therapy, or systemic treatments depending on the cancer type. The treatment plan would depend on what type of cancer it is and where it started.
+Patient: Is it treatable?
+Doctor: I won't mislead you, this type of involvement can be serious. But many patients do respond to treatment, and our goal would be to control the disease and maintain your quality of life and function. We would work closely with oncology, and you would have a whole team supporting you.
+Patient: What about my symptoms right now? Will my legs get better?
+Doctor: That depends on how quickly we can start treatment once we have a diagnosis, and how your body responds. Some patients see improvement, others stabilize, and some unfortunately continue to progress. I wish I could give you a definite answer, but I want to be truthful with you.
+Patient: I appreciate your honesty.
+Doctor: Let me summarize what we've discussed. You have symptoms affecting your legs, bladder, and balance that are being caused by something involving the covering of your spinal cord. The MRI and lumbar puncture confirm there's a problem there. We're waiting for specific test results to determine exactly what it is. While we wait, we'll manage your symptoms and monitor you closely in the hospital. Once we have a diagnosis, we'll develop a treatment plan together. Does that capture everything?
+Patient: Yes, I think so.
+Doctor: Now, there are some things I need you and the nursing staff to watch for. If you notice any sudden worsening of your leg weakness, if you develop any new symptoms like difficulty swallowing, changes in your vision, or severe headaches, please alert us immediately. These could indicate the condition is progressing and we may need to act quickly. Can you repeat back what to watch for?
+Patient: Sudden weakness getting worse, trouble swallowing, vision changes, or bad headaches.
+Doctor: Perfect. Is there anyone you'd like us to contact, family members who should be here with you or who should know what's going on?
+Patient: My daughter. She lives about two hours away, but she'd want to know.
+Doctor: We can absolutely help facilitate that conversation. Would you like me to be present when you tell her, or would you prefer to speak with her privately first?
+Patient: Maybe you could speak with her after I do, just to explain the medical side?
+Doctor: Of course. I'll make myself available for that. Is there anything else you'd like to ask me, anything I haven't explained clearly?
+Patient: No, I think you've explained things better than anyone else has. Thank you for being straight with me.
+Doctor: You deserve honesty and respect, especially at a time like this. I'll check on you tomorrow, and as soon as any test results come in, I'll come speak with you personally. You're not alone in this, Mrs. Patterson. We're going to figure this out together.
 
 **Scores:**
 {
-  "cc_opening": 1,
-  "cc_agenda_set": 1,
-  "cc_patient_narrative_supported": 1,
-  "cc_structure_signposting": 0,
-  "cc_summary_checkback": 1,
+  "cc_opening": 2,
+  "cc_agenda_set": 2,
+  "cc_patient_narrative_supported": 2,
+  "cc_structure_signposting": 2,
+  "cc_summary_checkback": 2,
   "cc_closing_next_steps": 2
 }
 
 **Rationale:**
-- cc_opening (1): Basic greeting present but lacks formal introduction or minimal warmth
-- cc_agenda_set (1): Acknowledges chief complaint but doesn't explore full agenda or multiple concerns
-- cc_patient_narrative_supported (1): Some patient expression allowed but frequent redirections or closed-ended questions dominate
-- cc_structure_signposting (0): No clear signposting, jumps between topics without transitions, disorganized
-- cc_summary_checkback (1): Brief acknowledgments but minimal active verification of patient comprehension
+- cc_opening (2): Professional introduction with name, warm greeting, establishes positive rapport
+- cc_agenda_set (2): Explicitly invites patient to share full concerns, explores priorities comprehensively
+- cc_patient_narrative_supported (2): Uses open-ended questions, allows patient to tell story without interruption, validates perspective
+- cc_structure_signposting (2): Clear transitions with explicit signposting ('Now...', 'At age X...'), well-organized flow
+- cc_summary_checkback (2): Regular verification of understanding ('Is that correct?', 'Does that make sense?'), summarizes key points
 - cc_closing_next_steps (2): Specific follow-up plan with clear next steps, monitoring described, patient/family informed
 
 ---
+
+### Example 16
+
+**Conversation:**
+Doctor: Good afternoon, Mrs. Patterson. I'm Dr. Hernandez, the neurologist. I've been asked to see you because of the new symptoms you've been experiencing. Before we dive into the test results, I'd like to hear from you. Can you tell me in your own words what's been happening?
+Patient: It's been a nightmare, honestly. For months I've felt terrible, no appetite, exhausted all the time, losing weight without trying. Then the back pain started, and now my legs feel weak and tingly. I've even had some accidents with my bladder, which is humiliating.
+Doctor: I'm so sorry you've been going through all of this. It sounds incredibly difficult. Thank you for sharing that with me. Is there anything else that's been concerning you?
+Patient: Yes. Nobody seems to know what's wrong with me. I've had test after test, and I still don't have answers. I'm scared it's something serious, like cancer.
+Doctor: That fear makes complete sense, especially with everything you've been through. Is there anything else you'd like to discuss today?
+Patient: I just want to know what's causing all this. And what can be done about it.
+Doctor: I understand completely. Let me tell you how I'd like to approach our conversation. First, I'm going to ask you some more detailed questions about your symptoms to make sure I fully understand what you're experiencing. Then I'll explain what the tests have shown us so far. Finally, we'll talk about what happens next. Does that sound okay?
+Patient: Yes, please.
+Doctor: Let's start with your legs. When did you first notice the weakness?
+Patient: About two weeks ago. At first I thought I was just tired, but then I started having trouble with stairs. Now I feel unsteady when I walk, like I might fall.
+Doctor: And the numbness and tingling, where exactly do you feel that?
+Patient: It started in my feet and has gradually moved up to about my knees. It's like pins and needles, but constant.
+Doctor: What about the bladder problems, when did those start?
+Patient: About a week ago. I can't always tell when I need to go, and sometimes I don't make it in time. I've also been constipated.
+Doctor: I appreciate you telling me all of this, I know it's not easy to discuss. Now, can you tell me what you think might be causing these symptoms?
+Patient: I don't know. I keep thinking about the bone lesions they found on the CT scan months ago. Could they be related? And the fact that they haven't found a cancer yet, that terrifies me. Like maybe it's hiding somewhere.
+Doctor: Those are very reasonable thoughts. What worries you most about all of this?
+Patient: That it's something that can't be treated. That I'm going to keep getting worse. I live alone, and the thought of not being able to walk or take care of myself is overwhelming.
+Doctor: I hear you. Independence is so important, and the uncertainty must be incredibly hard to live with. What are you hoping we can accomplish?
+Patient: I just want a diagnosis. And if there's something wrong, I want to know if it can be fixed.
+Doctor: That's what we're working toward, and I want to share with you what we've learned so far. Can I do that now?
+Patient: Yes, please.
+Doctor: The MRI of your brain and spine showed something significant. There's abnormal enhancement, which means something is coating the membranes that surround your spinal cord and brainstem. This is called leptomeningeal involvement. Are you with me so far?
+Patient: I think so. Something is affecting my spinal cord?
+Doctor: Exactly. The covering around your spinal cord. This explains your leg weakness, the numbness and tingling, the bladder and bowel problems, and the balance issues. When this area is affected, all of those symptoms can occur because the nerves that control those functions travel through there.
+Patient: What's causing it?
+Doctor: We did a lumbar puncture, a spinal tap, to analyze the fluid around your spine. It showed elevated protein and white blood cells, which confirms there's something abnormal happening there. We're now running additional tests on that fluid to determine exactly what's causing it.
+Patient: Is it cancer?
+Doctor: I want to be honest with you. Given everything we're seeing, including the bone lesions, the lymph node findings, the weight loss, and now this spinal involvement, we are concerned about the possibility of a malignancy. However, we haven't confirmed that yet. The spinal fluid tests will help us get closer to an answer.
+Patient: How long until we know?
+Doctor: Some results will come back within a few days. Others, like specific cancer markers, may take up to a week. I know waiting is hard, but I want us to have accurate information before we make any treatment decisions.
+Patient: What happens if it is cancer?
+Doctor: If it turns out to be cancer that has spread to the leptomeninges, there are treatments available. They might include chemotherapy delivered directly into the spinal fluid, radiation therapy, or systemic treatments depending on the cancer type. The treatment plan would depend on what type of cancer it is and where it started.
+Patient: Is it treatable?
+Doctor: I won't mislead you, this type of involvement can be serious. But many patients do respond to treatment, and our goal would be to control the disease and maintain your quality of life and function. We would work closely with oncology, and you would have a whole team supporting you.
+Patient: What about my symptoms right now? Will my legs get better?
+Doctor: That depends on how quickly we can start treatment once we have a diagnosis, and how your body responds. Some patients see improvement, others stabilize, and some unfortunately continue to progress. I wish I could give you a definite answer, but I want to be truthful with you.
+Patient: I appreciate your honesty.
+Doctor: Let me summarize what we've discussed. You have symptoms affecting your legs, bladder, and balance that are being caused by something involving the covering of your spinal cord. The MRI and lumbar puncture confirm there's a problem there. We're waiting for specific test results to determine exactly what it is. While we wait, we'll manage your symptoms and monitor you closely in the hospital. Once we have a diagnosis, we'll develop a treatment plan together. Does that capture everything?
+Patient: Yes, I think so.
+Doctor: Now, there are some things I need you and the nursing staff to watch for. If you notice any sudden worsening of your leg weakness, if you develop any new symptoms like difficulty swallowing, changes in your vision, or severe headaches, please alert us immediately. These could indicate the condition is progressing and we may need to act quickly. Can you repeat back what to watch for?
+Patient: Sudden weakness getting worse, trouble swallowing, vision changes, or bad headaches.
+Doctor: Perfect. Is there anyone you'd like us to contact, family members who should be here with you or who should know what's going on?
+Patient: My daughter. She lives about two hours away, but she'd want to know.
+Doctor: We can absolutely help facilitate that conversation. Would you like me to be present when you tell her, or would you prefer to speak with her privately first?
+Patient: Maybe you could speak with her after I do, just to explain the medical side?
+Doctor: Of course. I'll make myself available for that. Is there anything else you'd like to ask me, anything I haven't explained clearly?
+Patient: No, I think you've explained things better than anyone else has. Thank you for being straight with me.
+Doctor: You deserve honesty and respect, especially at a time like this. I'll check on you tomorrow, and as soon as any test results come in, I'll come speak with you personally. You're not alone in this, Mrs. Patterson. We're going to figure this out together.
+
+**Scores:**
+{
+  "cc_opening": 2,
+  "cc_agenda_set": 2,
+  "cc_patient_narrative_supported": 2,
+  "cc_structure_signposting": 2,
+  "cc_summary_checkback": 2,
+  "cc_closing_next_steps": 2
+}
+
+**Rationale:**
+- cc_opening (2): Professional introduction with name, warm greeting, establishes positive rapport
+- cc_agenda_set (2): Explicitly invites patient to share full concerns, explores priorities comprehensively
+- cc_patient_narrative_supported (2): Uses open-ended questions, allows patient to tell story without interruption, validates perspective
+- cc_structure_signposting (2): Clear transitions with explicit signposting ('Now...', 'At age X...'), well-organized flow
+- cc_summary_checkback (2): Regular verification of understanding ('Is that correct?', 'Does that make sense?'), summarizes key points
+- cc_closing_next_steps (2): Specific follow-up plan with clear next steps, monitoring described, patient/family informed
+
+---
+
 
 
 ## Instructions

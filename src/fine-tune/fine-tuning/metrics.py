@@ -31,6 +31,3 @@ def compute_metrics(eval_pred):
         'f1_calcam5': calcam5_metrics['f1'],
         'f1_calcam6': calcam6_metrics['f1'],
     }
-
-
-

@@ -8,24 +8,22 @@ from transformers import AutoTokenizer, BertConfig, BertModel, BertPreTrainedMod
 
 class MultiTaskBertClass(BertPreTrainedModel):
 
-    def __init__(self,config):
-        super(MultiTaskBertClass,self).__init__()
-
+    def __init__(self, config):
         super().__init__(config)      
 
         self.bert=BertModel(config)  
 
-        self.CalCam1=nn.Linear(config.hidden_size,2)
+        self.CalCam1=nn.Linear(config.hidden_size,3)
 
-        self.CalCam2=nn.Linear(config.hidden_size,2)
+        self.CalCam2=nn.Linear(config.hidden_size,3)
 
-        self.CalCam3=nn.Linear(config.hidden_size,2)
+        self.CalCam3=nn.Linear(config.hidden_size,3)
 
-        self.CalCam4=nn.Linear(config.hidden_size,2)
+        self.CalCam4=nn.Linear(config.hidden_size,3)
 
-        self.CalCam5=nn.Linear(config.hidden_size,2)
+        self.CalCam5=nn.Linear(config.hidden_size,3)
 
-        self.CalCam6=nn.Linear(config.hidden_size,2)
+        self.CalCam6=nn.Linear(config.hidden_size,3)
 
         classifier_dropout = config.classifier_dropout if config.classifier_dropout is not None else config.hidden_dropout_prob
 
@@ -51,12 +49,12 @@ class MultiTaskBertClass(BertPreTrainedModel):
         loss=None
         if calcam1_labels is not None and calcam2_labels is not None and calcam3_labels is not None and calcam4_labels is not None and calcam5_labels is not None and calcam6_labels is not None:
             loss_fct = nn.CrossEntropyLoss()
-            loss1 = loss_fct(CalCam1_logits.view(-1,2), calcam1_labels.view(-1))
-            loss2 = loss_fct(CalCam2_logits.view(-1,2), calcam2_labels.view(-1))
-            loss3 = loss_fct(CalCam3_logits.view(-1,2), calcam3_labels.view(-1))
-            loss4 = loss_fct(CalCam4_logits.view(-1,2), calcam4_labels.view(-1))
-            loss5 = loss_fct(CalCam5_logits.view(-1,2), calcam5_labels.view(-1))
-            loss6 = loss_fct(CalCam6_logits.view(-1,2), calcam6_labels.view(-1))
+            loss1 = loss_fct(CalCam1_logits.view(-1,3), calcam1_labels.view(-1))
+            loss2 = loss_fct(CalCam2_logits.view(-1,3), calcam2_labels.view(-1))
+            loss3 = loss_fct(CalCam3_logits.view(-1,3), calcam3_labels.view(-1))
+            loss4 = loss_fct(CalCam4_logits.view(-1,3), calcam4_labels.view(-1))
+            loss5 = loss_fct(CalCam5_logits.view(-1,3), calcam5_labels.view(-1))
+            loss6 = loss_fct(CalCam6_logits.view(-1,3), calcam6_labels.view(-1))
             loss = loss1 + loss2 + loss3 + loss4 + loss5 + loss6
 
         
@@ -69,11 +67,3 @@ class MultiTaskBertClass(BertPreTrainedModel):
             CalCam5_logits,
             CalCam6_logits
         )
-
-
-
-
-
-    
-    
-    

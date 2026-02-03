@@ -20,7 +20,7 @@ NUM_TRAIN_EPOCHS = 10
 
 # Hyperparameters
 output_directory = RESULTS_DIRECTORY
-evaluation_strategy = 'epoch'
+eval_strategy = 'epoch'  # FIX 1: Changed from evaluation_strategy
 per_device_train_batch_size = 4
 per_device_eval_batch_size = 4
 gradient_accumulation_steps = 2  
@@ -52,7 +52,7 @@ mlflow.start_run(run_name=f"training_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
 mlflow.log_params({
     'pretrained_model': PRETRAINED_MODEL_NAME,
     'output_directory': output_directory,
-    'evaluation_strategy': evaluation_strategy,
+    'eval_strategy': eval_strategy,  # FIX 2: Changed from evaluation_strategy
     'per_device_train_batch_size': per_device_train_batch_size,
     'per_device_eval_batch_size': per_device_eval_batch_size,
     'gradient_accumulation_steps': gradient_accumulation_steps,
@@ -112,7 +112,7 @@ mlflow.log_param("trainable_parameters", trainable_params)
 
 training_args = TrainingArguments(
     output_dir=output_directory,
-    evaluation_strategy=evaluation_strategy,
+    eval_strategy=eval_strategy,  # FIX 3: Changed from evaluation_strategy
     learning_rate=learning_rate,
     per_device_train_batch_size=per_device_train_batch_size,
     per_device_eval_batch_size=per_device_eval_batch_size,
@@ -146,7 +146,7 @@ class MultiTaskDataCollator:
      
         batch = {
             'input_ids': [],
-            'attention_mask': [],
+            'attention_mask': [],  # FIX 4: Added attention_mask
             'calcam1_labels': [],
             'calcam2_labels': [],
             'calcam3_labels': [],
@@ -157,6 +157,7 @@ class MultiTaskDataCollator:
         
         for feature in features:
             batch['input_ids'].append(feature['input_ids'])
+            batch['attention_mask'].append(feature['attention_mask'])  # FIX 5: Populate attention_mask
             batch['calcam1_labels'].append(feature['cc_agenda_set'])
             batch['calcam2_labels'].append(feature['cc_closing_next_steps'])
             batch['calcam3_labels'].append(feature['cc_opening'])
@@ -170,7 +171,7 @@ class MultiTaskDataCollator:
 
 
 class MultiTaskTrainer(Trainer):
-    def compute_loss(self, model, inputs, return_outputs=False):
+    def compute_loss(self, model, inputs, return_outputs=False, num_items_in_batch=None):  # FIX 6: Added num_items_in_batch parameter
         labels = {
             'calcam1_labels': inputs.pop('calcam1_labels'),
             'calcam2_labels': inputs.pop('calcam2_labels'),
@@ -222,7 +223,7 @@ tokenizer = AutoTokenizer.from_pretrained(PRETRAINED_MODEL_NAME)
 
 data_collator = MultiTaskDataCollator(tokenizer)
 
-data_class = DataClass(data_path='./data/fine_tuning_data.csv', model_path=PRETRAINED_MODEL_NAME)
+data_class = DataClass(data_path='/workspace/intern-proj-abim/Intern-Project/src/label-data/data_source/labeled_conversations.csv', model_path=PRETRAINED_MODEL_NAME)
 train_data, val_data, test_data = data_class.split_data()
 
 mlflow.log_param("train_size", len(train_data))
@@ -240,42 +241,54 @@ trainer = MultiTaskTrainer(
 )
 
 print("Starting training...")
-train_result = trainer.train()
+try:
+    train_result = trainer.train()
+    
+    mlflow.log_metrics({
+        "final_train_loss": train_result.training_loss,
+        "train_runtime": train_result.metrics['train_runtime'],
+        "train_samples_per_second": train_result.metrics['train_samples_per_second'],
+        "train_steps_per_second": train_result.metrics['train_steps_per_second']
+    })
+    
+    print("Evaluating on validation set...")
+    val_metrics = trainer.evaluate()
+    mlflow.log_metrics({f"final_{k}": v for k, v in val_metrics.items()})
+    
+    print("Evaluating on test set...")
+    test_metrics = trainer.evaluate(test_data)
+    mlflow.log_metrics({f"test_{k}": v for k, v in test_metrics.items()})
+    
+    print("Saving model...")
+    model_path = os.path.join(output_directory, "final_model")
+    trainer.save_model(model_path)
+    
+    # FIX 7: Wrap MLflow model logging in try-except
+    try:
+        mlflow.pytorch.log_model(
+            pytorch_model=model,
+            artifact_path="model",
+            registered_model_name="MultiTaskBERT_CalCam"
+        )
+    except Exception as e:
+        print(f"Warning: Could not log model to MLflow registry: {e}")
+        # Log as artifact instead
+        mlflow.log_artifacts(model_path, artifact_path="model")
+    
+    tokenizer_path = os.path.join(output_directory, "tokenizer")
+    tokenizer.save_pretrained(tokenizer_path)
+    mlflow.log_artifacts(tokenizer_path, artifact_path="tokenizer")
+    
+    if os.path.exists(output_directory):
+        mlflow.log_artifacts(output_directory, artifact_path="training_outputs")
+    
+    print("Training complete!")
+    print(f"MLflow run ID: {mlflow.active_run().info.run_id}")
+    print(f"Test metrics: {test_metrics}")
 
-mlflow.log_metrics({
-    "final_train_loss": train_result.training_loss,
-    "train_runtime": train_result.metrics['train_runtime'],
-    "train_samples_per_second": train_result.metrics['train_samples_per_second'],
-    "train_steps_per_second": train_result.metrics['train_steps_per_second']
-})
-
-print("Evaluating on validation set...")
-val_metrics = trainer.evaluate()
-mlflow.log_metrics({f"final_{k}": v for k, v in val_metrics.items()})
-
-print("Evaluating on test set...")
-test_metrics = trainer.evaluate(test_data)
-mlflow.log_metrics({f"test_{k}": v for k, v in test_metrics.items()})
-
-print("Saving model...")
-model_path = os.path.join(output_directory, "final_model")
-trainer.save_model(model_path)
-
-mlflow.pytorch.log_model(
-    pytorch_model=model,
-    artifact_path="model",
-    registered_model_name="MultiTaskBERT_CalCam"
-)
-
-tokenizer_path = os.path.join(output_directory, "tokenizer")
-tokenizer.save_pretrained(tokenizer_path)
-mlflow.log_artifacts(tokenizer_path, artifact_path="tokenizer")
-
-if os.path.exists(output_directory):
-    mlflow.log_artifacts(output_directory, artifact_path="training_outputs")
-
-print("Training complete!")
-print(f"MLflow run ID: {mlflow.active_run().info.run_id}")
-print(f"Test metrics: {test_metrics}")
-
-mlflow.end_run()
+except Exception as e:
+    print(f"Error during training: {e}")
+    mlflow.log_param("error", str(e))
+    raise
+finally:
+    mlflow.end_run()
